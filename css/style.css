@@ -1,0 +1,39 @@
+.container-draggable{
+
+}
+
+.container{
+    width: 60%;
+}
+
+.container-draggable,
+.container-droppable{
+    width: 240px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.draggable-item{
+    margin: 2px;
+    padding: 4px;
+    background-color: lightskyblue;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    width: 200px;
+}
