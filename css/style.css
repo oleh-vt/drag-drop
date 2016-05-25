@@ -1,3 +1,8 @@
+html{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
 .container-draggable{
 
 }
@@ -9,31 +14,40 @@
 .container-draggable,
 .container-droppable{
     width: 240px;
+    height: 300px;
     display: inline-block;
     border: 1px solid black;
     box-sizing: border-box;
     border-radius: 5px;
-    height: 300px;
     margin-top: 10px;
     padding: 10px;
     vertical-align: top;
 }
 
-.draggable-item{
-    margin: 2px;
-    padding: 4px;
-    background-color: lightskyblue;
+li{
     border: 1px solid black;
     border-radius: 5px;
+    margin: 1px;
+    padding: 4px;
+    width: 200px;
+    text-align: center;
 }
 
+.draggable-item{
+    background-color: lightskyblue;
+}
+
+.accepted-item{
+    background-color: #00FFFF;
+}
+
+li.ui-draggable-dragging { background-color: #20B2AA; }
 
 
 ul{
-    margin: 0;
-    padding: 0;
     list-style-type: none;
-}
-li{
-    width: 200px;
+    padding-left: 0;
+    width: auto;
+    height: 250px;
+    text-align: center;
 }
