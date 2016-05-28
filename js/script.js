@@ -1,10 +1,7 @@
 $(document).ready(function(){
-    $.getJSON('http://young.org.ua/test.json', foo);
-
-    // $('#droppable').droppable({
-    //     drop: dropHandler
-    // });
-    $('#droppable').droppable({
+    $.getJSON('http://young.org.ua/test.json', fillSelect);
+    
+    $('#droppable1, #droppable2').droppable({
         drop: dropHandler
     });
 
@@ -26,7 +23,7 @@ $(document).ready(function(){
     });
 });
 
-function foo(data){
+function fillSelect(data){
     var categorySelection = $('#category');
     for(var key in data){
         $(categorySelection).append($('<option>', {
@@ -38,5 +35,5 @@ function foo(data){
 
 function dropHandler(event, ui){
     var draggableItem = ui.draggable;
-    $('#droppable').append($('<li>',{text: $(draggableItem).text()}).addClass('accepted-item'));
+    $(this).append($('<li>',{text: $(draggableItem).text()}).addClass('accepted-item'));
 }

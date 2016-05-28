@@ -3,9 +3,23 @@ html{
     font-size: 14px;
 }
 
-.container-draggable{
-
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    width: auto;
+    height: 250px;
+    text-align: center;
 }
+
+li{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 4px;
+    width: 200px;
+    text-align: center;
+}
+
 
 .container{
     width: 60%;
@@ -24,14 +38,7 @@ html{
     vertical-align: top;
 }
 
-li{
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 1px;
-    padding: 4px;
-    width: 200px;
-    text-align: center;
-}
+
 
 .draggable-item{
     background-color: lightskyblue;
@@ -44,10 +51,3 @@ li{
 li.ui-draggable-dragging { background-color: #20B2AA; }
 
 
-ul{
-    list-style-type: none;
-    padding-left: 0;
-    width: auto;
-    height: 250px;
-    text-align: center;
-}
