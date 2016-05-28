@@ -2,7 +2,8 @@ $(document).ready(function(){
     $.getJSON('http://young.org.ua/test.json', fillSelect);
     
     $('#droppable1, #droppable2').droppable({
-        drop: dropHandler
+        activeClass: 'drop-highlight',
+        drop: dropHandler,
     });
 
     $('#category').on('change', function(){

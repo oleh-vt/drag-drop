@@ -44,10 +44,16 @@ li{
     background-color: lightskyblue;
 }
 
+.draggable-item:hover{
+    cursor: move;
+}
+
 .accepted-item{
     background-color: #00FFFF;
 }
 
-li.ui-draggable-dragging { background-color: #20B2AA; }
+li.ui-draggable-dragging {background-color: #20B2AA;}
 
-
+.drop-highlight{
+    background: #ffff99;
+}
