@@ -6,8 +6,10 @@ html{
 ul{
     list-style-type: none;
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     width: auto;
-    height: 250px;
+    height: 230px;
     text-align: center;
 }
 
@@ -20,15 +22,14 @@ li{
     text-align: center;
 }
 
-
 .container{
-    width: 60%;
+    width: 780px;
+    margin:0 auto;
 }
 
 .container-draggable,
 .container-droppable{
-    width: 240px;
-    height: 300px;
+    width: 32%;
     display: inline-block;
     border: 1px solid black;
     box-sizing: border-box;
@@ -36,9 +37,8 @@ li{
     margin-top: 10px;
     padding: 10px;
     vertical-align: top;
+    overflow-y: auto;
 }
-
-
 
 .draggable-item{
     background-color: lightskyblue;
